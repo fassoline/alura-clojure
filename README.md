@@ -1,6 +1,6 @@
 # forca
 
-FIXME: description
+Project for Alura Clojure Class
 
 ## Installation
 
