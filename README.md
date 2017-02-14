@@ -2,35 +2,25 @@
 
 Project for Alura Clojure Class
 
-## Installation
+## Usage Lein
 
-Download from http://example.com/FIXME.
+	$ lein run
 
-## Usage
+## Usage Java
+	
+	$ lein uberjar
+    $ java -jar target/uberjar/forca-0.1.0-SNAPSHOT-standalone.jar
 
-FIXME: explanation
+## Lein Repl History
 
-    $ java -jar forca-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+	(map (fn [x] (* x 2)))
+	(def carros [50000.0, 60000.0])
+	(require '[forca.core :as forca] :reload)
+	(contains? palavra "A")
+	(filter (fn [x] (or (< x 2) (> x 4))) numeros)
+	(remove (fn [x] (not= (rem x 2) 0)) numeros)
+	(->> map map reduce)
+	recursão de calda (recur ...)
+	funcoes preguiçosas (map reduce filter)
+	(def numeros #{1 2 3 4 5})
+	(reduce (fn [soma x] (+ soma x) lista))
